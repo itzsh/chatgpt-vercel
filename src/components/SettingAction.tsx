@@ -74,7 +74,7 @@ export default function SettingAction(props: {
             <input
               type="text"
               value={props.setting().systemRule}
-              class="text-ellipsis max-w-150px ml-1em px-1 text-slate-7 dark:text-slate rounded-sm bg-slate bg-op-15 focus:bg-op-20 focus:ring-0 focus:outline-none"
+              class="text-ellipsis max-w-150px ml-1em px-1 text-slate-7 dark:text-slate rounded-sm bg-slate bg-op-15 focus:bg-op-20 focus:ring-0 focus:outline-none text-center"
               onInput={e => {
                 props.setSetting({
                   ...props.setting(),

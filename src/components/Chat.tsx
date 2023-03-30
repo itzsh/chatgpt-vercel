@@ -304,9 +304,9 @@ export default function (props: {
 
   const findPrompts = throttle(
     (value: string) => {
-      if (value === "/" || value === " ")
+      if (value === "/")
         return setCompatiblePrompt(props.prompts)
-      const query = value.replace(/^[\/ ](.*)/, "$1")
+      const query = value.replace(/^[\/](.*)/, "$1")
       if (query !== value)
         setCompatiblePrompt(
           fzf.find(query).map(k => ({
